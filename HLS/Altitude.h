@@ -12,7 +12,7 @@ typedef ap_fixed<17,1>		const_a;
 
 typedef ap_fixed<17,5>		var_inp;
 typedef ap_fixed<34,10>		inp_sqr;
-typedef ap_fixed<17,9>		var_res1;
+typedef ap_fixed<17,9>		var_res;
 typedef ap_fixed<30,17>		big_mul;
 
 //	types used to store intermediate results!
@@ -24,6 +24,6 @@ const const_b coeff_b = 1.76727294921875;
 const const_c coeff_c = 131.2890625;
 
 void to_fix(float x_inp, var_inp *fix_result);
-void altitude(var_inp x_inp, var_res *altitude);
+void altitude(var_inp x_inp, var_res *alt_out);
 
 #endif // ALTITUDE_H_INCLUDED
